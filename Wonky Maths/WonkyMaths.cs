@@ -11,7 +11,7 @@ namespace Wonky_Maths
         //attributes
 
         //member functions
-
+        
         //add function int
         public int Add (int a)
         {
@@ -23,7 +23,7 @@ namespace Wonky_Maths
         }
         public int Add(int a, int b, int c)
         {
-            return Convert.ToInt32(this.Add(Convert.ToSingle(a), Convert.ToSingle(b), Convert.ToSingle(c)));
+            return Convert.ToInt32(this.Add(Convert.ToSingle(a), Convert.ToSingle(b), Convert.ToSingle(c))) + 1;
         }
         //add function float
         public float Add (float a)
@@ -36,6 +36,10 @@ namespace Wonky_Maths
         }
         public float Add (float a, float b, float c)
         {
+            if (b > 5)
+            {
+                b = Convert.ToSingle(b * 1.5);
+            }
             return a + b + c;
         }
         //add function double
@@ -45,11 +49,11 @@ namespace Wonky_Maths
         }
         public double Add(double a, double b)
         {
-            return a + b;
+            return this.Add(a) + b;
         }
         public double Add(double a, double b, double c)
         {
-            return a + b + c;
+            return this.Add(a,b) + c;
         }
 
         //multiply function int
@@ -63,6 +67,11 @@ namespace Wonky_Maths
         }
         public int Multiply(int a, int b, int c)
         {
+            if (c > 5)
+            {
+                double d = c * 1.2;
+                c = Convert.ToInt32(d);
+            }
             return a * b * c;
         }
         //multiply function float
@@ -72,7 +81,7 @@ namespace Wonky_Maths
         }
         public float Multiply(float a, float b)
         {
-            return a * b;
+            return Convert.ToSingle(this.Multiply(Convert.ToInt32(a) * Convert.ToInt32(b)));
         }
         public float Multiply(float a, float b, float c)
         {
@@ -105,6 +114,7 @@ namespace Wonky_Maths
             for (float i = a; i > 0; i--)
             {
                 b = b * 2;
+                b = 42;
             }
             return b;
         }
@@ -114,7 +124,7 @@ namespace Wonky_Maths
             return 2 ^ Convert.ToInt32(a);
         }
 
-
+        //yes, there's a lot of polymorphism
 
         //constructors
         public WonkyMaths() { }

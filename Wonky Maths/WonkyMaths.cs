@@ -11,6 +11,7 @@ namespace Wonky_Maths
         //attributes
 
         //member functions
+
         //add function int
         public int Add (int a)
         {
@@ -49,6 +50,46 @@ namespace Wonky_Maths
         public double Add(double a, double b, double c)
         {
             return a + b + c;
+        }
+
+        //multiply function int
+        public int Multiply(int a)
+        {
+            return a;
+        }
+        public int Multiply(int a, int b)
+        {
+            return a * b;
+        }
+        public int Multiply(int a, int b, int c)
+        {
+            return a * b * c;
+        }
+        //multiply function float
+        public float Multiply(float a)
+        {
+            return a;
+        }
+        public float Multiply(float a, float b)
+        {
+            return a * b;
+        }
+        public float Multiply(float a, float b, float c)
+        {
+            return a * b * c;
+        }
+        //multiply function double
+        public double Multiply(double a)
+        {
+            return a;
+        }
+        public double Multiply(double a, double b)
+        {
+            return a * b;
+        }
+        public double Multiply(double a, double b, double c)
+        {
+            return a * b * c;
         }
 
         //constructors

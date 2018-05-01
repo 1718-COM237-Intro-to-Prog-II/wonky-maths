@@ -92,6 +92,30 @@ namespace Wonky_Maths
             return a * b * c;
         }
 
+        //two to the power of function int
+        public int TwoToPowerOf (int a)
+        {
+            return 2 ^ a;
+        }
+        //two to the power of function float
+        public float TwoToPowerOf(float a)
+        {
+            float b = 1;
+
+            for (float i = a; i > 0; i--)
+            {
+                b = b * 2;
+            }
+            return b;
+        }
+        //two to the power of function int
+        public double TwoToPowerOf(double a)
+        {
+            return 2 ^ Convert.ToInt32(a);
+        }
+
+
+
         //constructors
         public WonkyMaths() { }
     }

@@ -23,6 +23,18 @@ namespace Wonky_Maths
         // Add and Multiply can take one, two, or three variables.
         //
         // Each member function returns the corresponding calculation.
+        //
+        // eg
+        // int a = 2;
+        // int b = 5;
+        // int result = M1.Add(a,b);
+        //
+        // eg
+        // float c = 3.0;
+        // float d = 1.2;
+        // float e = 12.2;
+        // float result = M1.Multiply(c,d,e);
+        //
 
         public TestingForm()
         {

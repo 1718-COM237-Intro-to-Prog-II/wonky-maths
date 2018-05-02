@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Wonky_Maths
 {
-    public partial class Form1 : Form
+    public partial class TestingForm : Form
     {
         // Declaring an object M1 of class WonkyMaths
         WonkyMaths M1 = new WonkyMaths();
@@ -24,7 +24,7 @@ namespace Wonky_Maths
         //
         // Each member function returns the corresponding calculation.
 
-        public Form1()
+        public TestingForm()
         {
             InitializeComponent();
         }

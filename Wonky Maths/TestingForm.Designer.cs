@@ -1,6 +1,6 @@
 ﻿namespace Wonky_Maths
 {
-    partial class Form1
+    partial class TestingForm
     {
         /// <summary>
         /// Required designer variable.

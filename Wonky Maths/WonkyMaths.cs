@@ -56,6 +56,12 @@ namespace Wonky_Maths
             return this.Add(a,b) + c;
         }
 
+        //add function string
+        public string Add(string a, string b) 
+        {
+            return a + b;
+        }
+
         //multiply function int
         public int Multiply(int a)
         {
